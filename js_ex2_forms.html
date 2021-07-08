@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>registration form</title>
+	<style type="text/css">
+		.container{
+			border: 1px solid grey;
+			width: 50%;
+			height: 1000px;
+			margin-left: 225px;
+			
+			margin-top: 50px;
+			position:absolute;
+		}
+		input[type=text], input[type=number] {
+  width: 93.5%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Student Details</h2>
+	<form action="action_page.php">
+		<label for="fname">First Name :</label><br>
+		<input type="text" name="fname" id="fname" placeholder="Enter your First Name" required><br><br>
+		<label for="mname">Middle Name :</label><br>
+		<input type="text" name="mname" id="mname" placeholder="Enter your Middle Name"><br><br>
+		<label for="lname">Last Name :</label><br>
+		<input type="text" name="lname" id="lname" placeholder="Enter your Last Name"><br><br>
+		<label for="dob">D-O-B :</label><br>
+		<input type="text" name="dob" id="dob" placeholder="DD-MM-YEAR"><br><br>
+		<label>Gender :</label>
+		<input type="radio" name="gender" id="gender">
+		<label for="gender">Male</label>
+		<input type="radio" name="gender" id="gender" >
+		<label for="gender">female</label>
+		<input type="radio" name="gender" id="gender" >
+		<label for="gender">other</label><br><br>
+
+		
+		<label for="Fname">Father's Name :</label><br>
+		<input type="text" name="Fname" id="Fname" placeholder="Enter your Dad Name"><br><br>
+		<label for="Mname">Mother's Name :</label><br>
+		<input type="text" name="Mname" id="Mname" placeholder="Enter your Mom Name"><br><br>
+		<label for="phone">Contact No:</label><br>
+		<input type="number" name="phone" id="phone" placeholder="Enter your phone no"><br><br>
+		<label for="email">Email :</label><br>
+		<input type="text" name="email" id="email" placeholder="Enter your Email"><br><br>
+		<label for="hobbies">Hobbies :</label>
+		<input type="checkbox" name="hobbies" id="hobbies">
+		<label>Music</label>
+		<input type="checkbox" name="hobbies" id="hobbies">
+		<label>Games</label>
+		<input type="checkbox" name="hobbies" id="hobbies">
+		<label>Travelling</label><br><br><br>
+		<button type="submit">Register</button>
+		
+	</form>
+</div>
+
+</body>
+</html>
