@@ -1,0 +1,18 @@
+// Pascal's Triangle / leetcode / java solution
+
+class Solution {
+    public List<List<Integer>> generate(int numRows) {
+        List<List<Integer>> ans=new ArrayList<>();
+       
+        for(int A=0;A<numRows;A++){
+            int val=1;
+             ArrayList<Integer> list=new ArrayList<Integer>();
+             for(int i=0;i<A+1;i++){
+              list.add(val);
+              val=(val*(A-i))/(i+1);
+            }
+            ans.add(list);
+       }    
+     return ans;
+    }
+}
